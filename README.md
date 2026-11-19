@@ -11,6 +11,29 @@ A web app where students report hostel problems, the warden assigns them to staf
 How the parts connect:
 Browser (frontend) -> `frontend/js/api.js` -> Express API (`/api/...`) -> MongoDB Atlas
 
+## Windows quick start (VS Code)
+
+1. Open the project folder in VS Code.
+2. Open Terminal -> New Terminal and start the backend:
+
+   ```powershell
+   cd backend
+   npm install
+   npm start
+   ```
+
+3. Keep the backend terminal running. Confirm the API is healthy by opening `http://localhost:5000/api/health`; it should return `{"status":"ok"}`.
+4. In VS Code Explorer, right-click `frontend/index.html` and choose **Open with Live Server**.
+5. Use the URL opened by Live Server. If its origin is not `http://localhost:8080`, set `CLIENT_ORIGIN` in `backend/.env` to the exact frontend origin (scheme + host + port, with no page path). For example:
+
+   ```env
+   CLIENT_ORIGIN=http://127.0.0.1:5500
+   ```
+
+   Restart the backend after changing `backend/.env`. If Live Server uses another port, use that port instead.
+
+Do not close the backend terminal while demonstrating the app. To stop the backend, press `Ctrl+C` in that terminal.
+
 ## 1. Create the database on MongoDB Atlas (one time)
 1. Sign up at mongodb.com/atlas and create a free **M0** cluster.
 2. **Database Access** -> Add Database User. Choose a username and password and save the password.
