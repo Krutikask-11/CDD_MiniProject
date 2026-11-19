@@ -11,7 +11,7 @@
      GET   /staff                                            -> [staff]
    user: {id,name,email,role: 'student'|'admin'|'staff', room?, category?}
 ------------------------------------------------------------------- */
-const CONFIG = { USE_MOCK: false, API_BASE: 'http://localhost:5000/api' };
+const CONFIG = { USE_MOCK: false, API_BASE: 'https://hostelcare-mocha.vercel.app/api' };
 
 const Api = (() => {
   const KEY = 'hct_db', SESSION = 'hct_session';
