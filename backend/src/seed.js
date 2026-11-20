@@ -8,10 +8,6 @@ const accounts = [
   { name: 'Warden Rao', email: 'admin@nie.ac.in', password: 'admin123', role: 'admin' },
   { name: 'Ravi (Plumber)', email: 'ravi@nie.ac.in', password: 'staff123', role: 'staff', category: 'Water supply' },
   { name: 'Suma (Electrician)', email: 'suma@nie.ac.in', password: 'staff123', role: 'staff', category: 'Electricity' },
-  { name: 'Mess Supervisor', email: 'mess@nie.ac.in', password: 'staff123', role: 'staff', category: 'Mess' },
-  { name: 'Housekeeping Supervisor', email: 'cleaning@nie.ac.in', password: 'staff123', role: 'staff', category: 'Cleanliness' },
-  { name: 'Network Technician', email: 'wifi@nie.ac.in', password: 'staff123', role: 'staff', category: 'Wi-Fi' },
-  { name: 'Maintenance Staff', email: 'maintenance@nie.ac.in', password: 'staff123', role: 'staff', category: 'Other' },
   { name: 'Demo Student', email: 'student@nie.ac.in', password: 'student123', role: 'student', room: 'B-214' },
 ];
 

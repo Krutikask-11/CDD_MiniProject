@@ -85,3 +85,4 @@ The tests need a MongoDB. Use a separate throwaway database and set `MONGODB_URI
 ## Security notes
 - Never commit `.env` (it is in `.gitignore`) and never share the Atlas password or JWT secret in chats or screenshots.
 - Passwords are stored as bcrypt hashes; roles are checked on the server for every request.
+<!-- Minor documentation update for project maintenance -->
