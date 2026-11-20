@@ -1,9 +1,10 @@
 # MongoDB stays on Atlas. Put MONGODB_URI and JWT_SECRET in a .env file next to
 # this file (docker compose reads it automatically) or export them in your shell.
+#backend-Node.js
 services:
   api:
     build: ./backend
-    ports:
+      ports:
       - "5000:5000"
     environment:
       MONGODB_URI: ${MONGODB_URI}
